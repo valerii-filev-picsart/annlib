@@ -67,6 +67,15 @@
 #				files in the MS_WIN32 directory).
 #-----------------------------------------------------------------------------
 
+# linux library only
+linux-g++-library:
+	$(MAKE) targets \
+	"ANNLIB = libANN.a" \
+	"C++ = g++" \
+	"CFLAGS = -O3" \
+	"MAKELIB = ar ruv" \
+	"RANLIB = true"
+
 #					Linux using g++
 linux-g++:
 	$(MAKE) targets \

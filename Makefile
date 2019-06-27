@@ -56,6 +56,10 @@ default:
 	@echo "See file Makefile for other compilation options, such as disabling"
 	@echo "performance measurement code."
 
+# make library only
+linux-g++-library:
+	cd src ; $(MAKE) $@
+
 #-----------------------------------------------------------------------------
 # main make entry point
 #-----------------------------------------------------------------------------
